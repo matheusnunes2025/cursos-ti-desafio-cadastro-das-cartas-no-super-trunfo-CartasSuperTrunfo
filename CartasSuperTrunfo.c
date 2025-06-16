@@ -162,5 +162,16 @@ int main() {
     printf("Densidade Populacional: Carta 2 venceu(%d)\n", (densidade_populacional2 >= densidade_populacional));
     printf("PIB per Capita: Carta 2 venceu(%d)\n", (pib_percapita2 >= pib_percapita));
     printf("Super Poder: Carta 2 venceu (%d)\n", (superpoder2 >= superpoder)); 
+
+    // Comparando atributo das duas cartas e determinando vencendor
+    if(superpoder > superpoder2){
+        printf("No Atributo Super Poder o vencedor é a carta1\n");
+    }
+    else if(superpoder < superpoder2){
+        printf("No Atributo Super Poder o vencedor é a carta 2\n");
+    }
+    else{
+        printf("Houve impate!\n");
+    }
     return 0;
 }
